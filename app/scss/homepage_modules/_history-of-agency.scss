@@ -1,0 +1,44 @@
+.history-of-agency {
+	@include wrapper-limit;
+	padding: 0 15px;
+	@include clearfix;
+	
+	&-img {
+		width: 40%;
+	}
+	
+	&-box {
+		@include clearfix;
+		position: relative;
+		width: 50%;
+		float: right;
+	}
+	
+	&-title {
+		@include green-square;
+		font-size: 30px;
+		line-height: 80px;
+		&::before {
+			transform: translateY(200%);
+		}
+	}
+
+	&-subtitle {
+		font-size: 16px;
+		line-height: 30px;
+		padding-bottom: 10px;
+	}
+	
+	&-btn {
+		background-color: rgb(123, 238, 199);
+		color: white;
+		float: right;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: 900;
+		text-transform: uppercase;
+		width: 165px;
+		line-height: 50px;
+		text-align: center;
+	}
+}

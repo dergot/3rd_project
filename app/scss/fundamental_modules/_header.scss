@@ -1,0 +1,50 @@
+.header {
+	@include wrapper-limit;
+	@include clearfix;
+
+	padding: 25px 15px;
+
+	&-logo,
+	&-logo:active,
+	&-link,
+	&-link:active {
+		color: #60606e;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		font-weight: 900;
+		line-height: 50px;
+		opacity: 0.5;
+		text-transform: uppercase;
+	}
+
+	&-burger {
+		display: none;
+		float: right;
+		font-size: 25px;
+		font-weight: 900;
+		opacity: 0.5;
+		line-height: 50px;
+		transition: transform 0.5s ease 0s;
+		width: 50px;
+	}
+
+	&-logo,
+	&-link,
+	&-burger {
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&-navbar {
+		float: right;
+	}
+
+	&-list {
+		display: inline-block;
+	}
+
+	&-list + &-list {
+		margin-left: 15px;
+	}
+}

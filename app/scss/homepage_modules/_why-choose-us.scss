@@ -1,0 +1,51 @@
+.why-choose-us {
+	@include wrapper-limit;
+	position: relative;
+	text-align: center;
+
+	&-title {
+		@include green-square;
+		font-size: 30px;
+		line-height: 40px;
+		margin: 0 auto;
+		width: fit-content;
+	}
+	
+	&-subtitle {
+		padding-top: 30px;
+		width: calc((100% / 3) * 2);
+		margin: 0 auto;
+	}
+	
+	&-advantages {
+		@include flexbox;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+		margin-top: 100px;
+		
+		&-column {
+			text-transform: uppercase;
+			text-align: left;
+			i {
+				font-size: 36px;
+				line-height: 48px;
+				color: #60606e;
+			}
+			ul {
+				padding: 20px 0;
+			}
+			h3 {
+				line-height: 48px;
+				font-size: 18px;
+			}
+			li {
+				line-height: 30px;
+			}
+		}
+	}
+	
+	&-img {
+		width: 40%;
+	}
+}

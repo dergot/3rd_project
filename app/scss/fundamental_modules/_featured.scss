@@ -1,0 +1,39 @@
+.featured {
+	@include wrapper-limit;
+	padding: 125px 15px;
+	text-align: center;
+	
+	&-bg {
+		background-image: url(../../img/Layer_1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 90%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	
+	&-were {
+		background-color: rgb(123, 238, 199);
+		font-size: 18px;
+		margin: 0 auto;
+		padding: 10px 20px;
+		width: fit-content;
+	}
+	
+	&-title {
+		border: solid #60606e 10px;
+		font-size: 48px;
+		margin: 0 auto;
+		padding: 20px 40px;
+		width: fit-content;
+	}
+	
+	&-subtitle {
+		font-size: 16px;
+		margin: 30px auto 0 auto;
+		max-width: 555px;
+	}
+}

@@ -1,0 +1,74 @@
+.newsletter {
+	margin-top: 75px;
+	padding: 50px 0;
+	background-color: #7beec7;
+
+	&-flex-wrap {
+		@include wrapper-limit;
+		@include flexbox;
+		justify-content: space-between;
+		padding: 0 15px;
+	}
+
+	&-work-together {
+		width: 40%;
+
+		h5 {
+			color: #ffffff;
+			font-size: 30px;
+			line-height: 48px;
+		}
+
+		a {
+			display: inline-block;
+			padding: 20px 30px;
+			background-color: white;
+			color: #7beec7;
+			font-family: 'Montserrat';
+			font-weight: 900;
+			text-transform: uppercase;
+			margin-top: 25px;
+		}
+	}
+
+	&-subscription {
+		background-color: white;
+		padding: 25px;
+		width: 50%;
+
+		h5 {
+			font-size: 24px;
+			line-height: 36px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		&-input {
+			display: flex;
+			margin-top: 25px;
+
+			input {
+				flex: auto;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				border-right: none;
+				font-family: 'Montserrat';
+				font-weight: 900;
+				text-transform: uppercase;
+				padding-left: 20px;
+			}
+
+			a {
+				flex: none;
+				padding: 20px 50px;
+				background-color: #7beec7;
+				color: white;
+				font-family: 'Montserrat';
+				font-weight: 900;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

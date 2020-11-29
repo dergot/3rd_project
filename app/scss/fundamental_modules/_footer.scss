@@ -1,0 +1,40 @@
+.footer {
+	@include wrapper-limit;
+	@include clearfix;
+	padding: 50px 15px;
+
+	&-flex-wrap {
+		@include flexbox;
+		justify-content: space-between;
+	}
+
+	&-list {
+		display: inline-block;
+	}
+
+	&-link {
+		color: #9a9a9a;
+		text-transform: uppercase;
+	}
+
+	&-list + &-list {
+		margin-left: 30px;
+	}
+
+	&-copyright {
+		color: #9a9a9a;
+		text-transform: uppercase;
+	}
+
+	&-social {
+		color: #999999;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-top: 25px;
+		float: right;
+
+		i + i {
+			margin-left: 10px;
+		}
+	}
+}
